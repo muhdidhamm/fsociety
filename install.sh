@@ -39,7 +39,7 @@ else
     BASH_PATH="/bin/bash"
     TERMUX=false
 
-    sudo apt-get install -y git python2.7
+    sudo apt-get install -y git 
 fi
 
 echo "[✔] Checking directories...";
@@ -72,7 +72,7 @@ fi
 
 echo "[✔] Installing ...";
 echo "";
-git clone --depth=1 https://github.com/Manisso/fsociety "$INSTALL_DIR";
+git clone --depth=1 https://github.com/muhdidhamm/fsociety "$INSTALL_DIR";
 echo "#!$BASH_PATH
 python $INSTALL_DIR/fsociety.py" "${1+"$@"}" > "$INSTALL_DIR/fsociety";
 chmod +x "$INSTALL_DIR/fsociety";
